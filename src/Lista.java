@@ -2,7 +2,7 @@ public class Lista {
     private No cabeca;
     private No calda;
 
-    public void lista(){
+    public void lista() {
         this.cabeca = null;
         this.calda = null;
     }
@@ -20,13 +20,13 @@ public class Lista {
         }
     }
 
-        public void imprimir(){
-            No atual = cabeca;
+    public void imprimir() {
+        No atual = cabeca;
 
-
-        while (atual != null){
+        while (atual != null) {
             System.out.println("Nome:" + atual.getProduto().getNome() + ", Valor:" + atual.getProduto().getValor());
             atual = atual.getProximo();
         }
-        }
+
+    }
 }
